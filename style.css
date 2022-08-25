@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Fira+Sans&family=Hind+Siliguri:wght@500&family=Ibarra+Real+Nova:wght@500&family=Lato:ital,wght@1,100&family=Monoton&family=Montserrat:wght@300&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Roboto+Mono&family=Rubik+Distressed&family=Rubik+Marker+Hatch&display=swap');
+
+body {
+    background: #F8ECD1;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin: 25px auto;
+    position: relative;
+}
+
+#cvs{
+    position: absolute;
+    border: 10px solid #AC7D88;
+    border-radius: 50px;
+    background: #85586F;
+}
+
+.options{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+}
+
+.options h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Monoton', cursive;
+    color: #F8ECD1;
+    margin: 30px 0px 20px 20px;
+    border-bottom: 3px solid;
+}
+
+.options h2{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #F8ECD1;
+    margin-left: 25px;
+}
+
+.options div{
+    display: inline-block;
+}
+
+.options .computer, .x{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 5px;
+    background-color: #F8ECD1;
+    color: #000;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 65px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.options .friend, .o{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 5px;
+    background-color: #F8ECD1;
+    color: #000;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.options .friend:hover, .computer:hover, .x:hover, .o:hover{
+    background-color: #2E0249;
+    color: #F8ECD1;
+}
+
+.options .play{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5em;
+    width: 70px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    border: 1px solid #011627;
+    text-align: center;
+    padding: 10px;
+    background-color: #011627;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 200ms ease;
+    margin-left: 188px;
+}
+.options .play:hover{
+    transform: scale(1.1);
+    background: #1b2f38;
+    color: #f8fafb;
+}
+
+.active{
+    background-color: #363062 !important;
+    color: #FFF !important;
+}
+
+.hide{
+    display: none;
+}
+
+.gameover{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: hwb(277deg 1% 71% / 70%);
+}
+.gameover h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FCC5C0;
+    margin: 40px 0 20px 0;
+}
+
+.gameover .winner-img{
+    display: block;
+    margin: 20px auto;
+}
+
+.gameover .play{
+    font-family: 'Rajdhani', sans-serif;
+    width: 250px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+    border: 1px solid #F8ECD1;
+    text-align: center;
+    padding: 10px;
+    background-color: #F8ECD1;
+    color: #000;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    box-shadow: inset 0 0 0 0 #FCC5C0;
+}
+.gameover .play:hover{
+    width: 250px;
+    color: #F8ECD1;
+    background: #2E0249;
+    box-shadow: inset 160px 0 0 0 #2E0249;
+}
+
+@media screen and (max-width: 750px){
+    #cvs {
+        margin-left: -10px;
+    }
+}
+
+.back-button img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: -20px;
+}
